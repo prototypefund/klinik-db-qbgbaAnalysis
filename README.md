@@ -34,4 +34,4 @@ Good luck!
 
 Sponsored through the Prototype Fund by the German Federal Ministry of Education and Research from March 2021 to August 2021. 
 
-<a href='https://klinik-db.de'><img src='man/figures/BMBF_eng.png' align="left" height="139" /></a>
+<a href='https://klinik-db.de'><img src='images/BMBF_eng.png' align="left" height="139" /></a>
