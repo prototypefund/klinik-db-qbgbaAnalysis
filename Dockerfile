@@ -1,11 +1,15 @@
 # This dockerfile just uses the geospatial rocker image, 
 # then adds shiny on top of it and lastly installs the 
 # qbgabaExtraData and the qbgbaApp packages which are 
-# then used for the analysis...
+# then used for the analysis, and starts the shiny app...
 
 FROM rocker/geospatial:4.1.1
 
-RUN /rocker_scripts/install_shiny_server.sh
+RUN Rscript -e 'install.packages(c("htmltools","attempt","shiny","config","leaflet","golem","DT"))'
 
 RUN R -e 'remotes::install_gitlab("klinik-db/qbgbaExtraData")'
+RUN R -e 'remotes::install_gitlab("klinik-db/qbgbaApp")'
 
+EXPOSE 80
+
+CMD R -e "options('shiny.port'=80,shiny.host='0.0.0.0');qbgbaApp::run_app()"
