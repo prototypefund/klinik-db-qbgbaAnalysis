@@ -25,8 +25,12 @@ Or, you can pull a prebuild container from our gitlab-based container registry:
 
 ```
 docker pull registry.gitlab.com/klinik-db/qbgbaanalysis
-docker run -it --rm qbgbaanalysis
+docker run -it --rm -p 8787:8787 -p 8080:80 qbgbaanalysis
 ```
+Again, go to http://localhost:8080 to see the map!
+
+<img src='images/map.png' align="center" height="250" />
+
 
 Good luck!
 
