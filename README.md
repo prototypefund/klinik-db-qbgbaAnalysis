@@ -4,7 +4,7 @@ This repo contains the (small) dockerfile that builds the docker container for a
 
 ## Standing on the shoulder of giants
 
-The infrastructure part of this project would have been a lot harder if not for the great work of the rocker project which delivers up-to-date R docker container for many purposes and the corresponding building blocks to get something that just works. See here for the [Rocker Project](https://www.rocker-project.org/) and have a look at specific R-based containers [here](https://github.com/rocker-org/rocker-versioned2), If you want to inform yourself about the great possibility to enhance a specific container with other components like shiny easily [here](https://github.com/rocker-org/rocker-versioned2#modifying-and-extending-images-in-the-new-architecture).
+The infrastructure part of this project would have been a lot harder if not for the great work of the rocker project which delivers up-to-date R docker container for many purposes and the corresponding building blocks to get something that just works. See here for the [Rocker Project](https://www.rocker-project.org/) and have a look at specific R-based containers [here](https://github.com/rocker-org/rocker-versioned2).
 
 ## Installation
 
@@ -34,4 +34,4 @@ Good luck!
 
 Sponsored through the Prototype Fund by the German Federal Ministry of Education and Research from March 2021 to August 2021. 
 
-<a href='https://klinik-db.de'><img src='man/figures/BMBF_eng.png' align="left" height="139" /></a>
+<a href='https://klinik-db.de'><img src='images/BMBF_eng.png' align="left" height="139" /></a>
