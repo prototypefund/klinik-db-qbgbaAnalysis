@@ -21,13 +21,13 @@ docker run -it --rm --name qbgbaAnalysis -p 8787:8787 -p 8080:80 klinikdb/qbgbaa
 ```
 and then go to http://localhost:8080
 
-Or, you can pull a prebuild container from our gitlab-based container registry:
+Or, you can pull a prebuilt container from our gitlab-based container registry:
 
 ```
 docker pull registry.gitlab.com/klinik-db/qbgbaanalysis
 docker run -it --rm -p 8787:8787 -p 8080:80 qbgbaanalysis
 ```
-Again, go to http://localhost:8080 to see the map!
+Again, go to http://localhost:8080 to see the map. But be aware that we continue to work on the shiny app (i.e., qbgbaApp), which means that the prebuilt image might be out of date. Use the dockerfile, if you want to be sure to get the latest version.
 
 <img src='images/map.png' align="center" height="250" />
 
