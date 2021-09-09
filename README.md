@@ -29,7 +29,11 @@ docker run -it --rm -p 8787:8787 -p 8080:80 qbgbaanalysis
 ```
 Again, go to http://localhost:8080 to see the map. But be aware that we continue to work on the shiny app (i.e., qbgbaApp), which means that the prebuilt image might be out of date. Use the dockerfile, if you want to be sure to get the latest version.
 
-<img src='images/map.png' align="center" height="250" />
+<img src='images/Screenshot_Analyse_App_01.png' align="center" height="250" />
+
+<br/>
+
+<img src='images/Screenshot_Analyse_App_02.png' align="center" height="250" />
 
 
 Good luck!
