@@ -21,7 +21,7 @@ docker run -it --rm --name qbgbaAnalysis -p 8787:8787 -p 8080:80 klinikdb/qbgbaa
 ```
 and then go to http://localhost:8080
 
-Or, you can pull a prebuilt container from our gitlab-based container registry:
+2. You can pull a prebuilt container from our gitlab-based container registry:
 
 ```
 docker pull registry.gitlab.com/klinik-db/qbgbaanalysis
