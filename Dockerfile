@@ -5,7 +5,7 @@
 
 FROM rocker/geospatial:4.1.1
 
-RUN Rscript -e 'install.packages(c("htmltools","attempt","shiny","config","leaflet","golem","DT"))'
+RUN Rscript -e 'install.packages(c("htmltools","attempt","shiny", "shinyjs", "config","leaflet","golem","DT", "echarts4r", "leafdown", "bs4Dash", "shinyFeedback", "shinythemes"))'
 
 RUN R -e 'remotes::install_gitlab("klinik-db/qbgbaExtraData")'
 RUN R -e 'remotes::install_gitlab("klinik-db/qbgbaApp")'
